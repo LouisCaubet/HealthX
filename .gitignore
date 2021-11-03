@@ -11,3 +11,5 @@ docs/
 pharmacyclient/
 templates/
 
+service-account.json
+
