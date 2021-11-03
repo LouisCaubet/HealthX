@@ -14,12 +14,27 @@ The app is made with the Xamarin Forms framework, it uses Braintree to process p
 
 Search page:
 
+![](https://github.com/LouisCaubet/HealthX/blob/main/screenshots/Search.jpg)
+
 Pharmacy page:
+
+![](https://github.com/LouisCaubet/HealthX/blob/main/screenshots/Pharmacy.jpg)
 
 Search at a set pharmacy:
 
+![](https://github.com/LouisCaubet/HealthX/blob/main/screenshots/SearchAtPharmacy.jpg)
+![](https://github.com/LouisCaubet/HealthX/blob/main/screenshots/SearchAtPharmacy2.jpg)
+
 Medicine page:
+
+![](https://github.com/LouisCaubet/HealthX/blob/main/screenshots/ParacetamolScreen1.PNG)
+![](https://github.com/LouisCaubet/HealthX/blob/main/screenshots/ParacetamolScreen2.PNG)
 
 Payment:
 
+![](https://github.com/LouisCaubet/HealthX/blob/main/screenshots/PaymentMethod.jpg)
+![](https://github.com/LouisCaubet/HealthX/blob/main/screenshots/CardInfo.jpg)
+
 Orders:
+
+![](https://github.com/LouisCaubet/HealthX/blob/main/screenshots/Orders.jpg)
