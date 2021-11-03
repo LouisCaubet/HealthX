@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+    
+<!-- XAML layout file for the medicine search page. This page is opened when pressing "Find Medicine" on 
+    given pharmacy. XAML renders objects not depending on the chosen pharmacy. -->
+    
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="HealthX.Pages.DetailsPages.FindMedicinePage"
+             xmlns:i18n="clr-namespace:HealthX"
+             Title="{i18n:Translate FindMedicineTitle}">
+    
+    <ContentPage.Content>
+
+        <StackLayout x:Name="root_layout">
+            <!-- The Searching at + pharmacyName layout on top of the window. PharmacyName set in CS. -->
+            <StackLayout x:Name="header" Orientation="Horizontal" Margin="20, 5" HorizontalOptions="CenterAndExpand">
+                <Label Text="{i18n:Translate SearchingAtText}" VerticalTextAlignment="Center" FontSize="16"/>
+                <Image Source="apotheke_logo.png" WidthRequest="50" HeightRequest="50"/>
+                <Label x:Name="pharmacy_name" Text="error" VerticalTextAlignment="Center" FontAttributes="Bold" FontSize="16"/>
+            </StackLayout>
+
+            <!-- Search Bar (nothing more to add). There might be a rendering issue on Android 7, causing the bar to be invisible -->
+            <SearchBar x:Name="search_bar" Margin="10" Placeholder="{i18n:Translate SearchMedicinePlaceholder}"/>
+
+            <!-- ScrollView where results will be drawn (see script). -->
+            <ScrollView x:Name="result_view" Orientation="Vertical" VerticalOptions="StartAndExpand"/>
+
+        </StackLayout>
+        
+    </ContentPage.Content>
+    
+</ContentPage>

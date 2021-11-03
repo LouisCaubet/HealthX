@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+            xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+            xmlns:local="clr-namespace:HealthX"
+            x:Class="HealthX.MainPage">
+
+    <!--Pages can be added as references or inline-->
+    <NavigationPage Title="Home" Icon="home.png" >
+        <x:Arguments>
+            <local:Pages.HomePage/>
+        </x:Arguments>
+    </NavigationPage>
+
+    <NavigationPage Title="Find" Icon="search.png">
+        <x:Arguments>
+            <local:Pages.SearchPage/>
+        </x:Arguments>
+    </NavigationPage>
+
+    <NavigationPage x:Name="map_page" Title="Map" Icon="map.png">
+        <x:Arguments>
+            <local:Pages.MapPage/>
+        </x:Arguments>
+    </NavigationPage>
+
+    <NavigationPage Title="Shop" Icon="commands.png">
+        <x:Arguments>
+            <local:Pages.ShopPage/>
+        </x:Arguments>
+    </NavigationPage>
+
+    <NavigationPage Title="Me" Icon="me.png">
+        <x:Arguments>
+            <local:Pages.MePage/>
+        </x:Arguments>
+    </NavigationPage>
+
+</TabbedPage>

@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="HealthX.Pages.DetailsPages.OrderFromImagePage"
+             xmlns:i18n="clr-namespace:HealthX"
+             Title="{i18n:Translate YourOrderTitle}">
+    
+    <!-- This page is displayed after the user has taken a picture of the prescription
+         The user will confirm here, and the reservation will be sent to server. -->
+    
+    <ContentPage.Content>
+        <!-- Root Layout -->
+        <StackLayout VerticalOptions="Fill">
+            <!-- Order at : + name of the pharmacy where the order is done. -->
+            <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand" Margin="5">
+                <Label Text="{i18n:Translate OrderAtString}" FontAttributes="Bold" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>
+                <Image Source="apotheke_logo" WidthRequest="40"/>
+                <Label x:Name="apotheke_name" FontAttributes="Bold" HorizontalTextAlignment="Center" VerticalTextAlignment="Center"/>
+            </StackLayout>
+            <!-- 2 columns : "Prescription:" | Thumbnail of the taken picture. -->
+            <StackLayout Orientation="Horizontal" Margin="20">
+                <Label Text="{i18n:Translate PrescriptionText}" VerticalOptions="CenterAndExpand" VerticalTextAlignment="Center" FontAttributes="Bold"/>
+                <Image x:Name="prescription_image" HorizontalOptions="EndAndExpand" VerticalOptions="CenterAndExpand"/>
+            </StackLayout>
+            <!-- Information of the 1€ app fee, and "confirm" button. -->
+            <StackLayout VerticalOptions="EndAndExpand" Margin="50">
+                <Label Text="{i18n:Translate AppFeeText}" FontSize="Small" HorizontalTextAlignment="Center"/>
+                <Button x:Name="confirmation_button" Text="{i18n:Translate ConfirmOrderText}" BackgroundColor="DodgerBlue" HorizontalOptions="Center"/>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

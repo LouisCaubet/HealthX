@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="HealthX.Pages.DetailsPages.PharmacyInfoPage"
+             xmlns:i18n="clr-namespace:HealthX"
+             Title="{i18n:Translate MoreInfosTitle}">
+    
+    <!-- Page displayed when user clicks "More Info" on the Pharmacy Detail Page
+         It's basically a title with a text field, loaded from the server. -->
+    
+    <ContentPage.Content>
+        <!-- Root layout -->
+        <StackLayout Margin="30">
+            <Label x:Name="title_label" HorizontalTextAlignment="Center" FontAttributes="Bold"/>
+            <Label x:Name="info_label"/>
+        </StackLayout>
+    </ContentPage.Content>
+    
+</ContentPage>

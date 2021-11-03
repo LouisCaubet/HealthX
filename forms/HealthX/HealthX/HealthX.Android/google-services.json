@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "473779064293",
+    "firebase_url": "https://healthx-185817.firebaseio.com",
+    "project_id": "healthx-185817",
+    "storage_bucket": "healthx-185817.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:473779064293:android:9f667048e127b606",
+        "android_client_info": {
+          "package_name": "com.icloud.louiscaubet.healthx"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "473779064293-bdi0t4hqkoib7ppovq75ca92kn4tg22s.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBXxTAsUcTwPncVeTH7JwUjKw8oeLQ6fMw"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

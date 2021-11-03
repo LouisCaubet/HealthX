@@ -1,0 +1,13 @@
+*.sln
+*.csproj
+*.csproj.*
+
+.vs/
+packages/
+bin/
+obj/
+
+docs/
+pharmacyclient/
+templates/
+

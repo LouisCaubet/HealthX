@@ -1,0 +1,339 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AppFeeText" xml:space="preserve">
+    <value>(1€ app fee applies)</value>
+  </data>
+  <data name="ApproxText" xml:space="preserve">
+    <value>Approx. </value>
+  </data>
+  <data name="AtHomePharmacyText" xml:space="preserve">
+    <value>At your Home Pharmacy:</value>
+  </data>
+  <data name="AvailableOrderText" xml:space="preserve">
+    <value>Order now and get notified when ready for you!</value>
+    <comment>availability state available on order text</comment>
+  </data>
+  <data name="AvailableOrderTextShort" xml:space="preserve">
+    <value>Available on Order!</value>
+    <comment>short version of available order text</comment>
+  </data>
+  <data name="AvailableText" xml:space="preserve">
+    <value>Available - Reserve now and secure availability!</value>
+    <comment>availability state available text</comment>
+  </data>
+  <data name="AvailableTextShort" xml:space="preserve">
+    <value>Available!</value>
+    <comment>short version of available text</comment>
+  </data>
+  <data name="AwaitingValidationText" xml:space="preserve">
+    <value>Awaiting Validation</value>
+  </data>
+  <data name="CancelText" xml:space="preserve">
+    <value>Cancel</value>
+    <comment>generic cancel string</comment>
+  </data>
+  <data name="ClosedOpeningAt" xml:space="preserve">
+    <value>Closed. Opening at </value>
+  </data>
+  <data name="ClosedToday" xml:space="preserve">
+    <value>Closed today.</value>
+  </data>
+  <data name="ConfirmOrderText" xml:space="preserve">
+    <value>CONFIRM ORDER</value>
+  </data>
+  <data name="ContainsText" xml:space="preserve">
+    <value>Contains: </value>
+  </data>
+  <data name="ErrorText" xml:space="preserve">
+    <value>Error!</value>
+    <comment>generic error title</comment>
+  </data>
+  <data name="FavoritesText" xml:space="preserve">
+    <value>Your favorites :</value>
+    <comment>recommendation view</comment>
+  </data>
+  <data name="FewLeftText" xml:space="preserve">
+    <value>Few left! Reserve now to secure it for you!</value>
+    <comment>availability state few left text</comment>
+  </data>
+  <data name="FewLeftTextShort" xml:space="preserve">
+    <value>Few left!</value>
+    <comment>short version of few left text</comment>
+  </data>
+  <data name="FindMedicineTitle" xml:space="preserve">
+    <value>Find Medicine</value>
+    <comment>title of the find medicine page</comment>
+  </data>
+  <data name="GenericMedicinesText" xml:space="preserve">
+    <value>Medicines</value>
+  </data>
+  <data name="GenericOK" xml:space="preserve">
+    <value>OK</value>
+    <comment>generic OK text</comment>
+  </data>
+  <data name="GenericPharmaciesText" xml:space="preserve">
+    <value>Pharmacies</value>
+  </data>
+  <data name="GpsNotAvailableText" xml:space="preserve">
+    <value>GPS not available</value>
+  </data>
+  <data name="ImageOfPrescriptionText" xml:space="preserve">
+    <value>Image of Prescription</value>
+  </data>
+  <data name="InfosText" xml:space="preserve">
+    <value>Infos</value>
+  </data>
+  <data name="InPreparationText" xml:space="preserve">
+    <value>In Preparation...</value>
+  </data>
+  <data name="MoreInfosTitle" xml:space="preserve">
+    <value>More Infos</value>
+  </data>
+  <data name="NearestAvailableText" xml:space="preserve">
+    <value>Nearest where available:</value>
+  </data>
+  <data name="NoCurrentPurchasesText" xml:space="preserve">
+    <value>You have no current purchases.</value>
+  </data>
+  <data name="NoSellRestrictionsText" xml:space="preserve">
+    <value>No Sell Restrictions</value>
+  </data>
+  <data name="NotAvailableText" xml:space="preserve">
+    <value>Sorry, this product is currently not available.</value>
+    <comment>availability state not available text</comment>
+  </data>
+  <data name="NotAvailableTextShort" xml:space="preserve">
+    <value>Currently not available</value>
+    <comment>short version of not available text</comment>
+  </data>
+  <data name="NotPaidText" xml:space="preserve">
+    <value>Not Paid</value>
+  </data>
+  <data name="OnlyPharmaciesText" xml:space="preserve">
+    <value>Only available in pharmacies</value>
+  </data>
+  <data name="OnlyPrescriptionText" xml:space="preserve">
+    <value>Only available on prescription</value>
+  </data>
+  <data name="OpenedUntil" xml:space="preserve">
+    <value>Opened until </value>
+  </data>
+  <data name="OrderAtString" xml:space="preserve">
+    <value>Order at </value>
+  </data>
+  <data name="OrderFromPrescriptionText" xml:space="preserve">
+    <value>Order from Prescription</value>
+  </data>
+  <data name="OrderNowText" xml:space="preserve">
+    <value>Order Now!</value>
+  </data>
+  <data name="OrderText" xml:space="preserve">
+    <value>Order</value>
+  </data>
+  <data name="PaidText" xml:space="preserve">
+    <value>Paid</value>
+  </data>
+  <data name="PaymentFailureText" xml:space="preserve">
+    <value>An error occured during transaction. Operation cancelled.</value>
+    <comment>to display if braintree drop-in threw error</comment>
+  </data>
+  <data name="PaymentQuestion" xml:space="preserve">
+    <value>When would you like to pay?</value>
+    <comment>displayed in action sheet before payment.</comment>
+  </data>
+  <data name="PayNowText" xml:space="preserve">
+    <value>Pay Now</value>
+    <comment>displayed in action sheet before payment.</comment>
+  </data>
+  <data name="PayPickupText" xml:space="preserve">
+    <value>Pay on Pickup (1€ app fee applies)</value>
+    <comment>displayed in action sheet before payment.</comment>
+  </data>
+  <data name="PrescriptionText" xml:space="preserve">
+    <value>Prescription: </value>
+  </data>
+  <data name="PrescriptionWarningText" xml:space="preserve">
+    <value>Warning! This medicine is only available on prescription. You will be asked for a prescription at purchase</value>
+    <comment>medicine details xaml</comment>
+  </data>
+  <data name="PurchaseText" xml:space="preserve">
+    <value>Purchase</value>
+  </data>
+  <data name="ReadyText" xml:space="preserve">
+    <value>Ready</value>
+  </data>
+  <data name="RecommendationText" xml:space="preserve">
+    <value>You may be looking for...</value>
+    <comment>recommendation view</comment>
+  </data>
+  <data name="ReservationFailureText" xml:space="preserve">
+    <value>An error occured while processing your reservation. Please try again later.</value>
+    <comment>display in alert if reservation failed.</comment>
+  </data>
+  <data name="ReservationsText" xml:space="preserve">
+    <value>Reservations</value>
+  </data>
+  <data name="ReservationSuccessText" xml:space="preserve">
+    <value>Your reservation was successful. You can monitor it in the Shop."</value>
+    <comment>display in alert if reservation was successful</comment>
+  </data>
+  <data name="ReservationText" xml:space="preserve">
+    <value>Reservation</value>
+  </data>
+  <data name="ReserveText" xml:space="preserve">
+    <value>Reserve!</value>
+  </data>
+  <data name="SearchingAtText" xml:space="preserve">
+    <value>Searching at :</value>
+  </data>
+  <data name="SearchMedicinePlaceholder" xml:space="preserve">
+    <value>Search Medicine ...</value>
+    <comment>placeholder for search view</comment>
+  </data>
+  <data name="SearchPlaceholder" xml:space="preserve">
+    <value>Search...</value>
+  </data>
+  <data name="SearchTitle" xml:space="preserve">
+    <value>Search</value>
+  </data>
+  <data name="ShowOnPickupText" xml:space="preserve">
+    <value>Show this when picking up your order.</value>
+  </data>
+  <data name="StatusText" xml:space="preserve">
+    <value>Status: </value>
+  </data>
+  <data name="SuccessText" xml:space="preserve">
+    <value>Success!</value>
+    <comment>generic success title</comment>
+  </data>
+  <data name="YourHomePharmacyText" xml:space="preserve">
+    <value>Your Home Pharmacy</value>
+  </data>
+  <data name="YourOrderTitle" xml:space="preserve">
+    <value>Your Order</value>
+    <comment>title of order from prescription page</comment>
+  </data>
+  <data name="YouWereSearchingAtText" xml:space="preserve">
+    <value>You where searching at:</value>
+  </data>
+  <data name="CurrentPurchasesText" xml:space="preserve">
+    <value>Current Purchases</value>
+  </data>
+</root>

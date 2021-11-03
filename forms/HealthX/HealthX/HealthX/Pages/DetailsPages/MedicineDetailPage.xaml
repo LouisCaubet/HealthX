@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="HealthX.Pages.DetailsPages.MedicineDetailPage"
+             xmlns:i18n="clr-namespace:HealthX">
+
+    <!-- This page shows details about selected medicine, and availability at either selected or nearest pharmacy, 
+            and at Home Pharmacy. -->
+    
+    <ContentPage.Content>
+        <StackLayout x:Name="root">
+        
+            <!-- Medicine detail header. Name/description, icon, price range, requirement.
+                 Default values set in XAML just for test. Real values set in C# -->
+            <StackLayout x:Name="headerLayout" Orientation="Horizontal">
+                <Image x:Name="iconImage" Source="empty.png" WidthRequest="100"/>
+                <StackLayout x:Name="headerText" Orientation="Vertical">
+                    <Label x:Name="text_name" Text="Medicine Name" FontSize="25" FontAttributes="Bold" LineBreakMode="TailTruncation"/>
+                    <Label x:Name="text_desc" Text="Empty description" FontSize="16" FontAttributes="Italic"/>
+                    <Label x:Name="text_pflicht" Text="Only Available in Pharmacies" FontSize="16" TextColor="Orange"/>
+                    <Label x:Name="text_price" Text="5.49€" FontSize="20" TextColor="Blue"/>
+                </StackLayout>
+            </StackLayout>
+            
+            <!-- Space between header and buy area. -->
+            <Label HeightRequest="10"/>
+            
+            <!-- This is only displayed if medicine requires a prescription. 
+                 We don't check any user presciption, so they can still press buy w/o prescription.
+                 Will be the role of the pharmacy to do this. -->
+            <StackLayout x:Name="alert_layout" Orientation="Horizontal" HeightRequest="50" BackgroundColor="Orange">
+                <Image Source="empty.png"/>
+                <Label x:Name="text_alert" Text="{i18n:Translate PrescriptionWarningText}" VerticalTextAlignment="Center" FontAttributes="Bold"/>
+            </StackLayout>
+            
+            <!-- ScrollView with purchase options. Filled in C# code. -->
+            <ScrollView Orientation="Vertical">
+                <StackLayout x:Name="purchase_layout" Orientation="Vertical" VerticalOptions="StartAndExpand"/>
+            </ScrollView>
+
+        </StackLayout>
+    </ContentPage.Content>
+
+</ContentPage>

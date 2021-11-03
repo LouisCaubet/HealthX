@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="HealthX.Pages.ShopPage"
+             xmlns:controls="clr-namespace:Refractored.XamForms.PullToRefresh;assembly=Refractored.XamForms.PullToRefresh"
+             xmlns:i18n="clr-namespace:HealthX"
+             Title="{i18n:Translate Reservations}">
+
+    <!-- Page displaying current reservations/orders of user, and their state 
+         Page also enables to display the ID, which will have to be retrieved by the Pharmacy. -->
+    
+    <!-- Allows to pull to refresh. See PullToRefreshLayout plugin -->
+    <controls:PullToRefreshLayout x:Name="PullToRefresh" IsPullToRefreshEnabled="True" RefreshCommand="{Binding RefreshCommand}" IsRefreshing="{Binding IsBusy}" RefreshColor="Blue" HorizontalOptions="CenterAndExpand">
+        
+        <!-- Root Scroll View, allows to scroll through the reservations. -->
+        <ScrollView Orientation="Vertical" HorizontalOptions="CenterAndExpand" VerticalOptions="FillAndExpand">
+            
+            <!-- Absolute Layout containing 2 Z-layers, first for the reservations and second for details. -->
+            <AbsoluteLayout x:Name="absolute_layout" HorizontalOptions="CenterAndExpand" VerticalOptions="Fill">
+                
+                <!-- First z-Layer of absolute layout. Displays current reservations/orders of user.
+                     Filled with C# logic, see .cs script. -->
+                <StackLayout x:Name="layout" HorizontalOptions="CenterAndExpand" AbsoluteLayout.LayoutBounds="0,0,1,1" AbsoluteLayout.LayoutFlags="All">
+                    <!-- "Your current purchases" title. -->
+                    <Label x:Name="TitleLabel" Text="{i18n:Translate CurrentPurchasesText}" TextColor="Blue" FontSize="16" HorizontalTextAlignment="Center" HorizontalOptions="CenterAndExpand"/>
+                    <!-- Filled in C# -->
+                    <StackLayout x:Name="ReservationView" Orientation="Vertical" HorizontalOptions="CenterAndExpand">
+                        <ActivityIndicator x:Name="LoadingIndicator" Color="Black" IsRunning="True"/>
+                    </StackLayout>
+                </StackLayout>
+                
+                <!-- Frame with a black/transparent layout placed below the detail layout. -->
+                <Frame x:Name="BlackBackground" BackgroundColor="#66000000" IsVisible="False" AbsoluteLayout.LayoutBounds="0,0,1,1" AbsoluteLayout.LayoutFlags="All" HasShadow="False"/>
+                
+                <!-- Detail layout - Displays more about clicked reservation. -->
+                <StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" AbsoluteLayout.LayoutBounds="0.5, 0.5" AbsoluteLayout.LayoutFlags="PositionProportional">
+                    <Frame x:Name="Overlay" IsVisible="False" CornerRadius="20" BackgroundColor="White" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" OutlineColor="Black">
+                        <StackLayout Orientation="Vertical" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+
+                            <StackLayout Orientation="Horizontal">
+                                <Image Source="apotheke_logo.png" WidthRequest="40"/>
+                                <Label Text="{i18n:Translate ShowOnPickupText}" TextColor="Gray" VerticalTextAlignment="Center"/>
+                            </StackLayout>
+                            
+                            <Label x:Name="IdLabel" Text="ID : 123456" FontSize="18" FontAttributes="Bold" HorizontalTextAlignment="Center" TextColor="Black"/>
+                            <Image x:Name="ReservationImage" IsVisible="False" Margin="20" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand"/>
+                            <Label x:Name="ContentLabel" IsVisible="False" Margin="20" HorizontalTextAlignment="Center" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" TextColor="Black"/>
+                            <Label x:Name="StatusLabel" HorizontalTextAlignment="Center" FontSize="15"/>
+                        </StackLayout>
+                    </Frame>
+                </StackLayout>
+            </AbsoluteLayout>
+        </ScrollView>
+    </controls:PullToRefreshLayout>
+
+</ContentPage>
+
+

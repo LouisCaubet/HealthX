@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:controls="clr-namespace:SegmentedControl.FormsPlugin.Abstractions;assembly=SegmentedControl.FormsPlugin.Abstractions"
+             x:Class="HealthX.Pages.SearchPage" 
+             xmlns:i18n="clr-namespace:HealthX"
+             Title="{i18n:Translate SearchTitle}">
+    
+    <!-- This page allows the user to search through our pharmacy and medicine database. 
+         Search logic is done in C#, XAML contains layout information. -->
+    
+    <ContentPage.Content>
+        <!-- Root layout -->
+        <StackLayout Padding="5">
+            
+            <!-- Allows the user to search either a pharmacy or a medicine. See SegmentedControl plugin. -->
+            <StackLayout Padding="15">
+                <controls:SegmentedControl x:Name="SegmentControl" TintColor="#007AFF" SelectedSegment="0">
+                    <controls:SegmentedControl.Children>
+                        <controls:SegmentedControlOption Text="{i18n:Translate GenericMedicinesText}" />
+                        <controls:SegmentedControlOption Text="{i18n:Translate GenericPharmaciesText}" />
+                    </controls:SegmentedControl.Children>
+                </controls:SegmentedControl>
+            </StackLayout>
+
+            <!-- Default search bar. Logic done in C#-->
+            <SearchBar x:Name="search" Placeholder="{i18n:Translate SearchPlaceholder}" />
+            
+            <!-- Scroll View where search results get displayed. -->
+            <ScrollView x:Name="results" VerticalOptions="FillAndExpand" />
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
